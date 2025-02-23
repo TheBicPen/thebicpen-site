@@ -1,6 +1,6 @@
 services:
   caddy:
-    image: caddy:2.9
+    image: docker.io/caddy:2.9
     restart: unless-stopped
     # See Linux capabilites under https://hub.docker.com/_/caddy
     cap_add:
