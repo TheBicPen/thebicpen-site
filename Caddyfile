@@ -1,14 +1,14 @@
 
 (static_site) {
-        # Set root directory to the dir mounted from the host
-        root * /srv
+    # Set root directory to the dir mounted from the host
+    root * /srv
 
-        # Enable the static file server
-        file_server
+    # Enable the static file server
+    file_server
 
-        handle_errors {
-            respond "{err.status_code} {err.status_text}"
-        }
+    handle_errors {
+        respond "{err.status_code} {err.status_text}"
+    }
 }
 
 # Needs to match the DNS A record for TLS to work
@@ -17,9 +17,9 @@ thebicpen.run.place {
 }
 
 # TLS won't work for this config
-:80 {
-    import static_site
-}
+# :80 {
+#     import static_site
+# }
 
 # Refer to the Caddy docs for more information:
 # https://caddyserver.com/docs/caddyfile
