@@ -2,9 +2,6 @@ services:
   caddy:
     image: docker.io/caddy:2.9
     restart: unless-stopped
-    # See Linux capabilites under https://hub.docker.com/_/caddy
-    cap_add:
-      - NET_ADMIN
     ports:
       - "80:80"
       - "443:443"
