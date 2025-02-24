@@ -6,4 +6,4 @@
 set -x
 
 # Install build tools on the host - no point in putting this in a container
-sudo apt install -y just docker.io docker-compose git
+sudo apt install -y just podman podman-compose git
