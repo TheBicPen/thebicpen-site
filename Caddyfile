@@ -6,7 +6,7 @@
 	file_server
 
 	handle_errors {
-		respond "{err.status_code} {err.status_text}"
+		respond "sus {err.status_code} {err.status_text} amogus"
 	}
 }
 
